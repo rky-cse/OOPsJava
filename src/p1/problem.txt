@@ -1,0 +1,37 @@
+Assignment 1: Create a "Book" Class
+Task Overview:
+Create a Java class named Book that encapsulates the following properties:
+
+title (String)
+
+author (String)
+
+price (double)
+
+Requirements:
+Constructor(s):
+
+Provide a constructor that initializes all the attributes.
+
+Optionally, add a default (no-argument) constructor if you like.
+
+Getter and Setter Methods:
+
+Create getters and setters for each of the attributes.
+
+toString() Method:
+
+Override the toString() method to return a string representation of the Book object (include all attributes).
+
+Testing Your Class:
+
+Create a separate Main class with a main() method.
+
+In the main() method, create at least one instance of Book and print it out using System.out.println().
+
+Guidelines:
+Keep your code clean and well-documented with comments.
+
+Focus on correctly encapsulating the attributes and providing a neat string representation.
+
+Don't worry about additional functionalities for now; the aim is to solidify your understanding of the basics of OOP in Java.

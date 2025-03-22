@@ -1,0 +1,58 @@
+Assignment 3: Create and Implement a "Borrowable" Interface
+Task Overview:
+We'll build a simple borrowing mechanism for library items by creating an interface named Borrowable. This interface will define the contract for borrowing functionality. You will then modify your Book (and optionally, EBook) class to implement this interface.
+
+Requirements:
+Create the Borrowable Interface:
+
+Define an interface named Borrowable with the following methods:
+
+void borrowItem(String borrowerName): Marks the item as borrowed by setting the borrower's name.
+
+void returnItem(): Marks the item as returned.
+
+boolean isBorrowed(): Returns whether the item is currently borrowed.
+
+Modify the Book Class:
+
+Implement the Borrowable interface in your Book class.
+
+Add a private attribute (e.g., private String borrower;) to track the borrower's name.
+
+In borrowItem(), assign the borrower if the book isn't already borrowed. Otherwise, you might print a message indicating that the book is already borrowed.
+
+In returnItem(), clear the borrower information.
+
+In isBorrowed(), return true if the borrower attribute is not null or empty, otherwise false.
+
+Update the toString() method to show the borrower's name or indicate that the book is available.
+
+Optionally Modify the EBook Class:
+
+You can have EBook inherit the borrowing functionality from Book or override it if needed (for instance, if borrowing an eBook is handled differently).
+
+Testing the Implementation:
+
+In your Main class, create a few Book (or EBook) objects.
+
+Demonstrate borrowing and returning functionality:
+
+Borrow an item.
+
+Check its status with isBorrowed().
+
+Return the item.
+
+Check the status again.
+
+Optionally, create a collection (e.g., a list of Borrowable) and iterate over it, performing some operations.
+
+Guidelines:
+Interface Usage: Focus on defining a clear contract with your interface. Interfaces in Java help enforce a set of functionalities across classes.
+
+Encapsulation: Keep the new borrower attribute private and provide appropriate access (through the interface methods).
+
+Error Handling: Optionally, handle cases where someone tries to borrow an already borrowed item.
+
+Documentation: Add comments where needed to explain your code logic.
+

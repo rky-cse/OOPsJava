@@ -1,0 +1,33 @@
+Assignment 2: Create a "Library" and "EBook" Classes
+Task Overview:
+We'll build on your knowledge of OOP by introducing inheritance and polymorphism.
+
+Requirements:
+Create a Parent Class (Book):
+
+Use the Book class you created in the previous assignment as the base class.
+
+Create a Child Class (EBook):
+
+Inherit from Book.
+
+Add an additional attribute: fileSize (in MB, as a double).
+
+Provide a constructor for EBook that initializes all attributes (including those from Book).
+
+Override the toString() method to include the fileSize information.
+
+Demonstrate Polymorphism:
+
+In your Main class, create an array or list of type Book that holds both Book and EBook objects.
+
+Iterate over this collection and print out each object. Notice how the toString() method behaves differently for EBook.
+
+Guidelines:
+
+Focus on code clarity and proper use of inheritance.
+
+Make sure your EBook class correctly calls the superclass constructor to initialize inherited properties.
+
+Add comments where necessary to explain your implementation.
+

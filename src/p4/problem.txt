@@ -1,0 +1,101 @@
+Assignment 4: Library Management System with Abstract Classes
+Task Overview:
+You'll create an abstract class called LibraryItem that encapsulates common properties for items in a library. Then, you'll derive concrete classes such as PhysicalBook and EBook. Finally, you'll implement a Library class that manages a collection of these items, demonstrating polymorphism and abstraction.
+
+Requirements:
+Create an Abstract Class LibraryItem:
+
+Attributes:
+
+title (String)
+
+author (String)
+
+Constructor:
+
+Provide a constructor to initialize the common attributes.
+
+Abstract Method:
+
+Define an abstract method void displayDetails() that each subclass must implement to print the details of the item.
+
+Create a Concrete Class PhysicalBook:
+
+Inheritance:
+
+Extend LibraryItem.
+
+Additional Behavior:
+
+Implement borrowing functionality by implementing the Borrowable interface (you can reuse or adapt your previous Borrowable interface).
+
+Use a private attribute (e.g., private String borrower;) to track who borrowed the book.
+
+Methods:
+
+Implement borrowItem(String borrowerName), returnItem(), and isBorrowed() as specified earlier.
+
+Override the displayDetails() method to print the book's details along with its borrowing status.
+
+Create a Concrete Class EBook:
+
+Inheritance:
+
+Extend LibraryItem.
+
+Additional Attribute:
+
+fileSize (double, in MB)
+
+Constructor:
+
+Initialize all attributes (title, author, and fileSize).
+
+Methods:
+
+Override the displayDetails() method to print details specific to an eBook (include file size).
+
+(Optionally, you can decide whether an EBook is borrowable or not. If not, you don't need to implement borrowing for this class.)
+
+Create a Library Class:
+
+Collection:
+
+Use a collection (like ArrayList<LibraryItem>) to store both PhysicalBook and EBook objects.
+
+Methods:
+
+addItem(LibraryItem item): Add an item to the library.
+
+searchByTitle(String title): Search and return a list (or print) of items matching a title.
+
+displayAllItems(): Iterate over the collection and call displayDetails() on each item.
+
+Testing in Main:
+
+In your Main class, create instances of PhysicalBook and EBook.
+
+Add these items to a Library instance.
+
+Demonstrate:
+
+Borrowing a PhysicalBook (and check its status).
+
+Searching for items by title.
+
+Displaying all items in the library using polymorphism.
+
+Guidelines:
+Abstract Classes & Methods:
+
+The abstract class LibraryItem forces all concrete items to provide their own version of displayDetails().
+
+Polymorphism:
+
+Your Library class should handle both PhysicalBook and EBook objects using a common reference type (LibraryItem).
+
+Error Handling & Clarity:
+
+For the borrowing functionality, handle the case when a book is already borrowed.
+
+Comment your code to explain the logic and structure.
